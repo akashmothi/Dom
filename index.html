@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>home page</title>
+<style>
+body{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+}
+.main{
+    font-size: 25px;
+    width: 100%;
+    background-color: pink;
+    overflow: auto;
+}
+
+.main a:hover{
+    color: red;
+}
+h1,p{
+    color: white;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border: 5px solid blue;
+    border-radius: 150px;
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+<a href="#main">Home</a>
+<a href="mothi resume.html">About</a>
+<a href="#">Project</a>
+<a href="mothi form.html">Contact</a>
+</div>
+<h1>M. Mothiram</h1>
+<p>Web Developer</p>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="mothi photo.jpg" alt="photo">
+<script>
+function bigImg(x) {
+  x.style.height = "400px";
+  x.style.width = "400px";
+}
+
+function normalImg(x) {
+  x.style.height = "250px";
+  x.style.width = "250px";
+}
+</script>
+</body>
+</html>
